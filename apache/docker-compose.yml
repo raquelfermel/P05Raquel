@@ -1,0 +1,8 @@
+version: 'v2.12.0'
+services:
+  apache:
+    image: httpd:latest
+    ports:
+      - '80:8080'
+    volumes:
+      - ${PWD}/website:/usr/local/apache2/htdocs/
